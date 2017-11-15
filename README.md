@@ -12,7 +12,7 @@ material is provided by external parties which are generally interested in augme
 extensions. More specifically:
 
 * Unless stated otherwise in specific cases, the Istio Authors are not responsible for maintaining,
-updating, bug fixing, documenting, or other supporting any of the material in this repository.
+updating, bug fixing, documenting, or otherwise supporting any of the material in this repository.
 
 * There are very minimal commit restrictions on this repo. We invite a high degree of community participation
 in the stuff in this repo.
