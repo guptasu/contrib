@@ -1,0 +1,8 @@
+# ignore vendor directory
+vendor/
+
+# ignore codegen bins
+bin/protoc-*
+
+# ignore IDE files
+.idea/
