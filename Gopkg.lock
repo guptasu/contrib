@@ -2,39 +2,22 @@
 
 
 [[projects]]
+  name = "cloud.google.com/go"
+  packages = ["compute/metadata"]
+  revision = "767c40d6a2e058483c25fa193e963a22da17236d"
+  version = "v0.18.0"
+
+[[projects]]
   name = "github.com/gogo/protobuf"
-  packages = [
-    "gogoproto",
-    "jsonpb",
-    "plugin/compare",
-    "plugin/defaultcheck",
-    "plugin/description",
-    "plugin/embedcheck",
-    "plugin/enumstringer",
-    "plugin/equal",
-    "plugin/face",
-    "plugin/gostring",
-    "plugin/marshalto",
-    "plugin/oneofcheck",
-    "plugin/populate",
-    "plugin/size",
-    "plugin/stringer",
-    "plugin/testgen",
-    "plugin/union",
-    "plugin/unmarshal",
-    "proto",
-    "protoc-gen-gogo/descriptor",
-    "protoc-gen-gogo/generator",
-    "protoc-gen-gogo/grpc",
-    "protoc-gen-gogo/plugin",
-    "protoc-gen-gogoslick",
-    "sortkeys",
-    "types",
-    "vanity",
-    "vanity/command"
-  ]
+  packages = ["gogoproto","jsonpb","plugin/compare","plugin/defaultcheck","plugin/description","plugin/embedcheck","plugin/enumstringer","plugin/equal","plugin/face","plugin/gostring","plugin/marshalto","plugin/oneofcheck","plugin/populate","plugin/size","plugin/stringer","plugin/testgen","plugin/union","plugin/unmarshal","proto","protoc-gen-gogo/descriptor","protoc-gen-gogo/generator","protoc-gen-gogo/grpc","protoc-gen-gogo/plugin","protoc-gen-gogoslick","sortkeys","types","vanity","vanity/command"]
   revision = "342cbe0a04158f6dcb03ca0079991a51a4248c02"
   version = "v0.5"
+
+[[projects]]
+  branch = "master"
+  name = "github.com/golang/protobuf"
+  packages = ["proto"]
+  revision = "c65a0412e71e8b9b3bfd22925720d23c0f054237"
 
 [[projects]]
   branch = "master"
@@ -49,11 +32,38 @@
   revision = "b7773ae218740a7be65057fc60b366a49b538a44"
 
 [[projects]]
+  name = "github.com/pborman/uuid"
+  packages = ["."]
+  revision = "e790cca94e6cc75c7064b1332e63811d4aae1a53"
+  version = "v1.1"
+
+[[projects]]
+  branch = "master"
+  name = "golang.org/x/net"
+  packages = ["context","context/ctxhttp"]
+  revision = "0ed95abb35c445290478a5348a7b38bb154135fd"
+
+[[projects]]
+  branch = "master"
+  name = "golang.org/x/oauth2"
+  packages = [".","google","internal","jws","jwt"]
+  revision = "b28fcf2b08a19742b43084fb40ab78ac6c3d8067"
+
+[[projects]]
+  branch = "master"
+  name = "google.golang.org/api"
+  packages = ["gensupport","googleapi","googleapi/internal/uritemplates","servicecontrol/v1"]
+  revision = "a27ddaf5ce0ce688be462071a9e55566e60bb59e"
+
+[[projects]]
+  name = "google.golang.org/appengine"
+  packages = [".","internal","internal/app_identity","internal/base","internal/datastore","internal/log","internal/modules","internal/remote_api","internal/urlfetch","urlfetch"]
+  revision = "150dc57a1b433e64154302bdc40b6bb8aefa313a"
+  version = "v1.0.0"
+
+[[projects]]
   name = "istio.io/api"
-  packages = [
-    "mixer/v1/config/descriptor",
-    "mixer/v1/template"
-  ]
+  packages = ["mixer/v1/config/descriptor","mixer/v1/template"]
   revision = "50cb9a38c07c3bc95feeece138dfc6a2c657f1cd"
 
 [[projects]]
@@ -65,18 +75,12 @@
 [[projects]]
   branch = "master"
   name = "istio.io/istio"
-  packages = [
-    "mixer/pkg/adapter",
-    "mixer/pkg/adapter/test",
-    "mixer/pkg/status",
-    "mixer/template/checknothing",
-    "mixer/template/reportnothing"
-  ]
+  packages = ["mixer/pkg/adapter","mixer/pkg/adapter/test","mixer/pkg/status","mixer/template/apikey","mixer/template/checknothing","mixer/template/quota","mixer/template/reportnothing","pkg/cache"]
   revision = "aaf54b09fa40dea8e67fc59abf672d36d4991b09"
 
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "1bc7f7eff6368ab09bd75ee9558c75ef90dbb36b46f849cb5989f50bf2e8dff6"
+  inputs-digest = "b496b0e1a0548331152802d1361b309d9535d95a1ee8640545513d06fe12f7bf"
   solver-name = "gps-cdcl"
   solver-version = 1

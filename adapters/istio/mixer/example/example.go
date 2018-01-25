@@ -35,8 +35,8 @@ import (
 	"istio.io/istio/mixer/template/checknothing"
 	"istio.io/istio/mixer/template/reportnothing"
 
-	"istio.io/extensions/adapters/istio/mixer/example/config"
-	tmpl "istio.io/extensions/adapters/istio/mixer/example/template"
+	"istio.io/contrib/adapters/istio/mixer/example/config"
+	tmpl "istio.io/contrib/adapters/istio/mixer/example/template"
 )
 
 const (
