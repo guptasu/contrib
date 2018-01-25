@@ -1,8 +1,8 @@
-# Extensions
+# Contrib
 
 This repo exists as a place to put community contributions that build around
 the core Istio platform, but aren't directly part of Istio proper. This includes
-primarily various adapters that can extend Istio's functionality, along with 
+adapters that can extend Istio's functionality, tools, along with 
 translated documentation.
 
 Please note the various LICENSE.md files throughout the repo, representing local licensing requirements.
