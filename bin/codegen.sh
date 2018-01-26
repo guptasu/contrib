@@ -16,7 +16,7 @@ fi
 
 GOGO_VERSION=$(sed -n '/gogo\/protobuf/,/\[\[projects/p' $ROOT/Gopkg.lock | grep version | sed -e 's/^[^\"]*\"//g' -e 's/\"//g')
 
--set -e
+set -e
 
 outdir=$ROOT
 file=$ROOT
