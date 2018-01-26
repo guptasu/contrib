@@ -16,11 +16,11 @@ fi
 
 GOGO_VERSION=$(sed -n '/gogo\/protobuf/,/\[\[projects/p' $ROOT/Gopkg.lock | grep version | sed -e 's/^[^\"]*\"//g' -e 's/\"//g')
 
-set -e
+-set -e
 
 outdir=$ROOT
 file=$ROOT
-protoc="$ROOT/bin/protoc-min-version-$GOGO_VERSION -version=3.5.0"
+protoc="$ROOT/bin/protoc-min-version-$GOGO_VERSION -version=3.5.1"
 optimport=$ROOT
 template=$ROOT
 
@@ -47,8 +47,8 @@ done
 # echo "outdir: ${outdir}"
 
 # Ensure expected GOPATH setup
-if [ $ROOT != "${GOPATH-$HOME/go}/src/istio.io/extensions" ]; then
-  die "istio/extensions repo not found in GOPATH/src/istio.io/"
+if [ $ROOT != "${GOPATH-$HOME/go}/src/istio.io/contrib" ]; then
+  die "istio/contrib repo not found in GOPATH/src/istio.io/"
 fi
 
 GOGOPROTO_PATH=vendor/github.com/gogo/protobuf
@@ -162,14 +162,13 @@ if [ "$opttemplate" = true ]; then
   DESCRIPTOR="--include_imports --include_source_info --descriptor_set_out=$templateDS"
   err=`$protoc $DESCRIPTOR $IMPORTS $PLUGIN $template`
   if [ ! -z "$err" ]; then
-    die "template generation failure: $err"; 
+    die "template generation failure: $err";
   fi
-  
   go run $GOPATH/src/istio.io/istio/mixer/tools/codegen/cmd/mixgenproc/main.go $templateDS -o $templateHG -t $templateIP $TMPL_GEN_MAP  
 
   err=`$protoc $IMPORTS $TMPL_PLUGIN $templateIP`
   if [ ! -z "$err" ]; then 
-    die "template generation failure: $err"; 
+    die "template generation failure: $err";
   fi
 
   #rm $templateDS

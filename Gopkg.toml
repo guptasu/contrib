@@ -10,7 +10,7 @@ required = [
 
 [[constraint]]
   name = "istio.io/api"
-  revision = "50cb9a38c07c3bc95feeece138dfc6a2c657f1cd"
+  revision = "a6c74ca9a8b5bba45bafd6d238a27dde4c406da7"
 
 [[override]]
   name = "github.com/gogo/protobuf"

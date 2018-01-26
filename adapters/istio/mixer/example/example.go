@@ -12,8 +12,8 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-//go:generate $GOPATH/src/istio.io/extensions/bin/codegen.sh -f adapters/istio/mixer/example/config/config.proto
-//go:generate $GOPATH/src/istio.io/extensions/bin/codegen.sh -t adapters/istio/mixer/example/template/template.proto
+//go:generate $GOPATH/src/istio.io/contrib/bin/codegen.sh -f adapters/istio/mixer/example/config/config.proto
+//go:generate $GOPATH/src/istio.io/contrib/bin/codegen.sh -t adapters/istio/mixer/example/template/template.proto
 
 // Package tmpl provides an tmpl Mixer adapter implementation. It is used
 // to provide code samples for future adapter developers on how to structure
@@ -35,8 +35,8 @@ import (
 	"istio.io/istio/mixer/template/checknothing"
 	"istio.io/istio/mixer/template/reportnothing"
 
-	"istio.io/extensions/adapters/istio/mixer/example/config"
-	tmpl "istio.io/extensions/adapters/istio/mixer/example/template"
+	"istio.io/contrib/adapters/istio/mixer/example/config"
+	tmpl "istio.io/contrib/adapters/istio/mixer/example/template"
 )
 
 const (
