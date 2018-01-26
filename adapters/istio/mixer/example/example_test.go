@@ -19,7 +19,7 @@ import (
 	"strings"
 	"testing"
 
-	tmpl "istio.io/extensions/adapters/istio/mixer/example/template"
+	tmpl "istio.io/contrib/adapters/istio/mixer/example/template"
 	"istio.io/istio/mixer/pkg/adapter/test"
 	"istio.io/istio/mixer/pkg/status"
 	"istio.io/istio/mixer/template/checknothing"
